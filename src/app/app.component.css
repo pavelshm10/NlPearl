@@ -1,0 +1,23 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  border: 1px solid black;
+  height: 768px;
+  width: 1366px;
+}
+
+.form-container {
+  width: 40%;
+  margin-left: 258px;
+  
+}
+
+.inner-form-container {
+  margin-top: 150px;
+}
+
+.message-container {
+  width: 60%;
+}
