@@ -1,3 +1,5 @@
+@import url('app/styles/form.css');
+
 .flex {
   display: flex;
 }
@@ -13,25 +15,4 @@
 
 .jc-center {
   justify-content: center;
-}
-
-.form-label {
-  font-size: 12px;
-  color: #84818a;
-  font-weight: bold;
-}
-
-.input-container {
-  margin-top: 20px;
-}
-
-.form_input {
-  width: 100%;
-  border-radius: 12px;
-  border: 1px solid #dcdbdd;
-  height: 35px;
-  margin-top: 10px;
-  box-sizing: border-box;
-  font-size: 12px;
-  padding-left: 15px;
 }

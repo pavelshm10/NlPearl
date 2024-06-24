@@ -23,6 +23,6 @@ export class FormComponent {
   phone: string = FORM.PHONE;
   name: string = FORM.NAME;
   buttonText: string = FORM.BUTTON_TEXT;
-  message: string = FORM.MESSAGE;
+  sentence_label: string = FORM.SENTENCE_LABEL;
   title = GENERAL.TITLE;
 }

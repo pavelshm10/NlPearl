@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { FORM } from '../../constans/form';
 
 @Component({
   selector: 'app-text-area',
@@ -9,5 +10,5 @@ import { Component, Input } from '@angular/core';
 })
 export class TextAreaComponent {
   @Input() label: string = '';
-  @Input() message: string = 'test';
+  @Input() sentence: string = FORM.SENTENCE;
 }

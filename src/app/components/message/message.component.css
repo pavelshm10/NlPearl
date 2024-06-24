@@ -1,3 +1,14 @@
-.messeage-text{
-    margin: auto;
+.message-container {
+  height: 550px;
+  width: 460px;
+  color: white;
+  background-color: #5a55f4;
+  border-radius: 12px;
+}
+
+.message {
+  color: white;
+  margin-left: 20px;
+  font-size: 36px;
+  margin-right: 10px;
 }

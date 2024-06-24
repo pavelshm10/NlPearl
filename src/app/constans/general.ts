@@ -1,4 +1,4 @@
 export const GENERAL = {
     TITLE: 'Test Page',
-    MESSAGE: ''
+    MESSAGE: 'Unlock the Power of Conversation with NLPearl and  Transform Your Business Interactions'
 }
