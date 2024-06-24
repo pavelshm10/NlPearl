@@ -1,4 +1,23 @@
 <div class="input-container">
-    <label class="form-label">{{label}}</label><br/>
-    <textarea class="form_input form_text_area" formControlName="description" type="text" id="description" matInput rows="2">{{sentence}}</textarea>
+  <label class="form-label">{{ label }}</label
+  ><br />
+  <div class="text-area-container">
+    <textarea
+      class="form_input form_text_area"
+      formControlName="description"
+      type="text"
+      id="description"
+      matInput
+      rows="2"
+      >{{ sentence }}</textarea
+    >
+    <hr class="hr"/>
+
+    <div class="buttons-container">
+      <app-button [text]="companyName" />
+      <app-button [text]="agentName" />
+      <app-button [text]="firstName" />
+      <app-button [text]="lastName" />
+    </div>
+  </div>
 </div>

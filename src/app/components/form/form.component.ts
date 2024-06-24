@@ -1,5 +1,5 @@
 import { ButtonComponent } from './../../shared/button/button.component';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FORM } from '../../constans/form';
 import { TextAreaComponent } from '../../shared/text-area/text-area.component';
 import { InputComponent } from '../../shared/input/input.component';
@@ -25,4 +25,5 @@ export class FormComponent {
   buttonText: string = FORM.BUTTON_TEXT;
   sentence_label: string = FORM.SENTENCE_LABEL;
   title = GENERAL.TITLE;
+  text: string = FORM.BUTTON_TEXT;
 }
