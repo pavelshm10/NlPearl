@@ -4,17 +4,16 @@
   <div class="text-area-container">
     <textarea
       class="form_input form_text_area"
-      (input)="setValue($event)"
+      (input)="handleInput($event)"
       rows="2"
       >{{ value }}</textarea
     >
     <hr class="hr" />
-
     <div class="buttons-container">
-      <app-button [text]="companyName" />
-      <app-button [text]="agentName" />
-      <app-button [text]="firstName" />
-      <app-button [text]="lastName" />
+      <app-button (buttonClick)="handleButtonClick($event)" [text]="companyName" />
+      <app-button (buttonClick)="handleButtonClick($event)" [text]="agentName" />
+      <app-button (buttonClick)="handleButtonClick($event)" [text]="firstName" />
+      <app-button (buttonClick)="handleButtonClick($event)" [text]="lastName" />
     </div>
   </div>
 </div>

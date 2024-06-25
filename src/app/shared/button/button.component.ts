@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FORM } from '../../constans/form';
 
 @Component({
@@ -10,4 +10,9 @@ import { FORM } from '../../constans/form';
 })
 export class ButtonComponent {
   @Input() text: string = '';
+  @Output() buttonClick: EventEmitter<string> = new EventEmitter<string>();
+
+  onClickButton(){
+    this.buttonClick.emit(this.text);
+  }
 }

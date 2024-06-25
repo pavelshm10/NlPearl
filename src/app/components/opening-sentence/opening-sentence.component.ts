@@ -13,9 +13,9 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
     {
       provide: NG_VALUE_ACCESSOR,
       useExisting: forwardRef(() => OpeningSentenceComponent),
-      multi: true
-    }
-  ]
+      multi: true,
+    },
+  ],
 })
 export class OpeningSentenceComponent implements ControlValueAccessor {
   @Input() label: string = '';
@@ -28,10 +28,15 @@ export class OpeningSentenceComponent implements ControlValueAccessor {
   onChange: any = () => {};
   onTouched: any = () => {};
 
-  setValue(value: any) {
-    this.value = value.target.value;
+  setValue(value: string) {
+    this.value = value;
     this.onChange(value);
     this.onTouched();
+  }
+
+  handleInput(event: Event): void {
+    const inputElement = event.target as HTMLInputElement;
+    this.setValue(inputElement.value);
   }
 
   writeValue(value: any): void {
@@ -44,5 +49,25 @@ export class OpeningSentenceComponent implements ControlValueAccessor {
 
   registerOnTouched(fn: any): void {
     this.onTouched = fn;
+  }
+
+  handleButtonClick(buttonText: string) {
+    console.log(this.value);
+    let replacedStr;
+    switch (buttonText) {
+      case FORM.COMPANY_NAME:
+        replacedStr = this.value.replace(/\[company_name\]/g, buttonText);
+        break;
+      case FORM.AGENT_NAME:
+        replacedStr = this.value.replace(/\[agent_name\]/g, buttonText);
+        break;
+      case FORM.FIRST_NAME:
+        replacedStr = this.value.replace(/\[first_name\]/g, buttonText);
+        break;
+      case FORM.LAST_NAME:
+        replacedStr = this.value.replace(/\[last_name\]/g, buttonText);
+        break;
+    }
+    this.setValue(replacedStr);
   }
 }

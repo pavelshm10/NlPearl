@@ -26,10 +26,10 @@ import {
 export class FormComponent {
   phone: string = FORM.PHONE;
   name: string = FORM.NAME;
-  buttonText: string = FORM.BUTTON_TEXT;
+  buttonText: string = FORM.SUBMIT;
   sentence_label: string = FORM.SENTENCE_LABEL;
   title = GENERAL.TITLE;
-  text: string = FORM.BUTTON_TEXT;
+  text: string = FORM.SUBMIT;
   form: FormGroup = new FormGroup({});
   constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
@@ -42,6 +42,5 @@ export class FormComponent {
 
   onSubmit() {
     console.log(this.form.value);
-    console.log('Description:', this.form.get('name')?.value.target.value);
   }
 }

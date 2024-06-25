@@ -1,9 +1,9 @@
 export const FORM = {
     NAME: 'Name',
     PHONE: 'Phone',
-    BUTTON_TEXT: 'Submit',
+    SUBMIT: 'Submit',
     SENTENCE_LABEL: 'Opening Sentence',
-    SENTENCE: 'Hi, this is                 , I’m calling from                      , do you have a few minutes for to answer some questions?',
+    SENTENCE: 'Hi, this is [agent_name]. I’m calling from [company_name], do you have a few minutes to answer some questions?"',
     COMPANY_NAME: 'Company Name',
     AGENT_NAME: 'Agent Name',
     FIRST_NAME: 'First Name',
