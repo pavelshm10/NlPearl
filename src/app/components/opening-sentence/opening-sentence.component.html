@@ -4,14 +4,11 @@
   <div class="text-area-container">
     <textarea
       class="form_input form_text_area"
-      formControlName="description"
-      type="text"
-      id="description"
-      matInput
+      (input)="setValue($event)"
       rows="2"
-      >{{ sentence }}</textarea
+      >{{ value }}</textarea
     >
-    <hr class="hr"/>
+    <hr class="hr" />
 
     <div class="buttons-container">
       <app-button [text]="companyName" />

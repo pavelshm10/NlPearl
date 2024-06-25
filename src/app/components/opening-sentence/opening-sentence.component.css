@@ -1,0 +1,21 @@
+.text-area-container {
+  border: 1px solid #dcdbdd;
+  border-radius: 10px;
+}
+
+.form_text_area {
+  height: 120px;
+  border: none;
+  padding-top: 15px;
+  color: #83818a;
+  resize: none;
+}
+
+.buttons-container {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.hr {
+  border-top: 1px solid #dcdbdd;
+}

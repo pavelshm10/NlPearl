@@ -1,7 +1,9 @@
 <p class="title">{{ title }}</p>
-<form class="form">
-  <app-input [label]="name" />
-  <app-input [label]="phone" />
-  <app-text-area [label]="sentence_label" />
-  <button class="button" type="submit">{{text}}</button>
+<form class="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+  <app-input formControlName="name" [label]="name" />
+  <app-input formControlName="phone" [label]="phone" />
+  <app-opening-sentence formControlName="sentence" [label]="sentence_label" />
+  <button [disabled]="!form.valid" class="submit-button" type="submit">
+    {{ text }}
+  </button>
 </form>
