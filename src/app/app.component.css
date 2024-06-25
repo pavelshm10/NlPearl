@@ -2,22 +2,33 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.container {
-  border: 1px solid black;
-  height: 768px;
-  width: 1366px;
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .form-container {
+    align-self: center;
+    width: 80%;
+  }
+
+  .message-container {
+    margin: auto;
+  }
 }
 
-.form-container {
-  width: 40%;
-  margin-left: 220px;
-  
-}
+@media screen and (min-width: 768px) {
+  .container {
+    height: 768px;
+    width: 1366px;
+  }
 
-.inner-form-container {
-  margin-top: 150px;
-}
+  .form-container {
+    width: 40%;
+    margin-left: 220px;
+  }
 
-.message-container {
-  width: 60%;
+  .inner-form-container {
+    margin-top: 150px;
+  }
 }

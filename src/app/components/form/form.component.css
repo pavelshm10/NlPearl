@@ -1,5 +1,7 @@
-.form {
-  width: 393px;
+@media screen and (min-width: 768px) {
+  .form {
+    width: 393px;
+  }
 }
 
 .title {
@@ -17,6 +19,6 @@
   font-size: 14px;
 }
 
-.submit-button:disabled{
-    opacity: 30%;
+.submit-button:disabled {
+  opacity: 30%;
 }
